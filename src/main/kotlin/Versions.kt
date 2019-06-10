@@ -51,7 +51,7 @@ private object versions {
     const val statusbar = "1.5.1"
     const val rx_binding = "2.2.0"
     const val xiaojunKtx="1.2.10"
-    const val androidlib = "1.0.4"
+    const val androidlib = "1.0.5"
     const val dividerview = "1.0.2"
     const val flowlayout = "1.14.0"
     const val exoplayer = "2.8.0"
@@ -87,17 +87,17 @@ object Deps {
     object support {
         const val annotations = "androidx.annotation:annotation:${versions.support}"
         const val app_compat = "androidx.appcompat:appcompat:${versions.support}"
-        const val recyclerview = "androidx.recyclerview:recyclerview:${versions.design}"
-        const val recyclerview_selection = "androidx.recyclerview:recyclerview-selection:${versions.design}"
-        const val cardview = "androidx.cardview:cardview:${versions.design}"
         const val design = "com.google.android.material:material:${versions.support}"
         const val v4 = "androidx.legacy:legacy-support-v4:${versions.support}"
         const val core_utils = "androidx.legacy:legacy-support-core-utils:${versions.support}"
+        const val recyclerview = "androidx.recyclerview:recyclerview:${versions.design}"
+        const val recyclerview_selection = "androidx.recyclerview:recyclerview-selection:${versions.design}"
+        const val cardview = "androidx.cardview:cardview:${versions.design}"
     }
 
     object androidx {
         const val ktx = "androidx.core:core-ktx:${versions.ktx}"
-        const val vectordrawable = "androidx.vectordrawable:vectordrawable:${versions.support}"
+        const val vectordrawable = "androidx.vectordrawable:vectordrawable:${versions.design}"
     }
 
     object stetho {
