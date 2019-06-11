@@ -6,12 +6,15 @@ import java.util.*
 
 private object versions {
     const val arch_core = "1.1.1"
-    const val room = "2.1.0-alpha01"
+    const val room = "2.1.0-rc01"
+    const val roomCompiler = "1.1.0"
     const val lifecycle = "2.0.0"
+    const val annotation = "1.1.0"
     const val support = "1.0.0"
-    const val androidx = "1.0.0"
-    const val ktx = "1.0.0"
-
+    const val compat = "1.0.2"
+    const val recycler = "1.0.0"
+    const val constraint_layout = "2.0.0-beta1"
+    const val ktx = "1.0.2"
     const val design = "1.0.0"
     const val gson = "2.8.2"
     const val dagger = "2.15"
@@ -24,7 +27,6 @@ private object versions {
     const val mockito = "2.7.19"
     const val mockito_all = "1.10.19"
     const val dexmaker = "2.2.0"
-    const val constraint_layout = "2.0.0-alpha2"
     const val glide = "4.8.0"
     const val timber = "4.5.1"
     const val android_gradle_plugin = "3.3.1"
@@ -51,7 +53,7 @@ private object versions {
     const val statusbar = "1.5.1"
     const val rx_binding = "2.2.0"
     const val xiaojunKtx="1.2.10"
-    const val androidlib = "1.0.5"
+    const val androidlib = "1.0.5.1"
     const val dividerview = "1.0.2"
     const val flowlayout = "1.14.0"
     const val exoplayer = "2.8.0"
@@ -85,13 +87,13 @@ object AndroidSdk {
 object Deps {
 
     object support {
-        const val annotations = "androidx.annotation:annotation:${versions.support}"
-        const val app_compat = "androidx.appcompat:appcompat:${versions.support}"
-        const val design = "com.google.android.material:material:${versions.support}"
+        const val annotations = "androidx.annotation:annotation:${versions.annotation}"
+        const val app_compat = "androidx.appcompat:appcompat:${versions.compat}"
         const val v4 = "androidx.legacy:legacy-support-v4:${versions.support}"
         const val core_utils = "androidx.legacy:legacy-support-core-utils:${versions.support}"
-        const val recyclerview = "androidx.recyclerview:recyclerview:${versions.design}"
-        const val recyclerview_selection = "androidx.recyclerview:recyclerview-selection:${versions.design}"
+        const val recyclerview = "androidx.recyclerview:recyclerview:${versions.recycler}"
+        const val recyclerview_selection = "androidx.recyclerview:recyclerview-selection:${versions.recycler}"
+        const val design = "com.google.android.material:material:${versions.design}"
         const val cardview = "androidx.cardview:cardview:${versions.design}"
     }
 
@@ -107,9 +109,9 @@ object Deps {
 
     object room {
         const val runtime = "androidx.room:room-runtime:${versions.room}"
-        const val compiler = "androidx.room:room-compiler:${versions.room}"
         const val rxjava2 = "androidx.room:room-rxjava2:${versions.room}"
         const val testing = "androidx.room:room-testing:${versions.room}"
+        const val compiler = "androidx.room:room-compiler:${versions.room}"
     }
 
 
