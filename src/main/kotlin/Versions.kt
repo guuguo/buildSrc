@@ -1,10 +1,13 @@
-import org.apache.tools.ant.taskdefs.Local
 import org.gradle.api.artifacts.dsl.RepositoryHandler
 import java.net.URI
 import java.text.SimpleDateFormat
 import java.util.*
 
 private object versions {
+    const val buildToolsVersion = "3.3.1"
+    const val navigationSafeArgsVersion = "1.0.0"
+    const val kotlin = "1.3.21"
+
     const val arch_core = "1.1.1"
     const val room = "2.1.0-rc01"
     const val roomCompiler = "1.1.0"
@@ -36,7 +39,6 @@ private object versions {
     const val atsl_runner = "1.1.0-beta02"
     const val atsl_rules = "1.0.1"
     const val hamcrest = "1.3"
-    const val kotlin = "1.3.11"
     const val paging = "1.0.1"
     const val navigation = "1.0.0-alpha04"
     const val work = "1.0.0-alpha08"
@@ -63,11 +65,6 @@ private object versions {
 }
 
 object BuildPlugins {
-    private object versions {
-        const val buildToolsVersion = "3.3.1"
-        const val kotlinVersion = "1.3.21"
-        const val navigationSafeArgsVersion = "1.0.0"
-    }
 
     const val androidApplication = "com.android.application"
     const val kotlinAndroid = "kotlin-android"
@@ -75,7 +72,7 @@ object BuildPlugins {
     const val kotlinKapt = "kotlin-kapt"
 
     const val androidGradlePlugin = "com.android.tools.build:gradle:${versions.buildToolsVersion}"
-    const val kotlinGradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${versions.kotlinVersion}"
+    const val kotlinGradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${versions.kotlin}"
 }
 
 object AndroidSdk {
