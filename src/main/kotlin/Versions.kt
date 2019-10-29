@@ -4,9 +4,9 @@ import java.text.SimpleDateFormat
 import java.util.*
 
 private object versions {
-    const val buildToolsVersion = "3.3.1"
+    const val buildToolsVersion = "4.0.0-alpha01"
     const val navigationSafeArgsVersion = "1.0.0"
-    const val kotlin = "1.3.21"
+    const val kotlin = "1.3.60-eap-25"
 
     const val arch_core = "1.1.1"
     const val room = "2.1.0-rc01"
@@ -76,7 +76,7 @@ object BuildPlugins {
 }
 
 object AndroidSdk {
-    const val min = 17
+    const val min = 21
     const val compile = 28
     const val target = compile
 }
@@ -271,6 +271,7 @@ object Deps {
 }
 
 fun addRepos(handler: RepositoryHandler) {
+    handler.maven { url = URI("https://dl.bintray.com/kotlin/kotlin-eap") }
     handler.maven { url = URI("http://maven.aliyun.com/nexus/content/groups/public") }
     handler.maven { url = URI("http://maven.aliyun.com/nexus/content/repositories/releases") }
     handler.maven { url = URI("https://dl.bintray.com/guuguo/maven") }
