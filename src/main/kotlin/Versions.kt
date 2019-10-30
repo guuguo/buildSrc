@@ -9,14 +9,14 @@ private object versions {
     const val kotlin = "1.3.60-eap-25"
 
     const val arch_core = "1.1.1"
-    const val room = "2.1.0-rc01"
+    const val room = "2.2.1"
     const val roomCompiler = "1.1.0"
     const val lifecycle = "2.0.0"
     const val annotation = "1.1.0"
     const val support = "1.0.0"
     const val compat = "1.0.2"
     const val recycler = "1.0.0"
-    const val constraint_layout = "2.0.0-beta1"
+    const val constraint_layout = "2.0.0-beta3"
     const val ktx = "1.0.2"
     const val design = "1.0.0"
     const val gson = "2.8.2"
@@ -77,7 +77,7 @@ object BuildPlugins {
 
 object AndroidSdk {
     const val min = 21
-    const val compile = 28
+    const val compile = 29
     const val target = compile
 }
 
